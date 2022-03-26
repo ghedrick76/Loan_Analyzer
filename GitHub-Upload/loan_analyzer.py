@@ -1,4 +1,5 @@
 # coding: utf-8
+from audioop import avg
 import csv
 from pathlib import Path
 
@@ -18,16 +19,22 @@ loan_costs = [500, 600, 200, 1000, 450]
 # @TODO: Use the `len` function to calculate the total number of loans in the list.
 # Print the number of loans from the list
 # YOUR CODE HERE!
+loan_quantity = len(loan_costs)
+print(loan_quantity)
 
 # What is the total of all loans?
 # @TODO: Use the `sum` function to calculate the total of all loans in the list.
 # Print the total value of the loans
 # YOUR CODE HERE!
+sum = sum(loan_costs)
+print(sum)
 
 # What is the average loan amount from the list?
 # @TODO: Using the sum of all loans and the total number of loans, calculate the average loan price.
 # Print the average loan amount
 # YOUR CODE HERE!
+avg_loan_amt = sum/loan_quantity
+print(avg_loan_amt)
 
 """Part 2: Analyze Loan Data.
 
